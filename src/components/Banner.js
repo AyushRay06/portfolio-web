@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "DevOps enthusiast" ];
+  const toRotate = [ "Web Developer", "DevOps Engineer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Ayush`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "DevOps enthusiast" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm a full stack developer with a specialization in React, and I'm currently learning DevOps to expand my skillset. I'm passionate about contributing to open source and real-world projects, and love the collaborative nature of the developer community. When I'm not coding, you'll likely find me at the gym, staying active and energized.</p>
+                <h1>{`Hi! I'm Ayush`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "DevOps Engineer" ]'><span className="wrap">{text}</span></span></h1>
+                 <p>I am a DevOps engineer mastering the art of  MERN stacks, and wielding the enchanting tools like Docker, Kubernetes, Terraform, and the cloud. I am passionate about open-source and real-world projects, and I love to collaborate with others to create digital wonders. When I'm not coding, I'm at the gym, staying active, and charged with boundless energy.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
